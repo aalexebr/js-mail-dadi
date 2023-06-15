@@ -7,25 +7,25 @@ form.addEventListener('submit',
         event.preventDefault();
         let userEmail = document.getElementById('addEmail').value
         
-        
+        let scope = 0
         for (let i = 0; i < mailList.length; i++) {
-            // console.log('-', mailList[i]);
+            
             if (userEmail == mailList[i]){
-                // alert('yes')
-                console.log('accepting ', userEmail, mailList[i])
-                // break;
-                
+                scope = 1
+
             }
-            else{
-                // alert('no')
-                console.log('non accepting ', userEmail, mailList[i])
-            }
-           
             
         }
-        
-      
-       
+        if (scope == 1){
+            console.log('accepted')
+        }
+        else {
+            console.log('denied')
+        }
         
     }
 );
+
+// take a let outseide the cicle and condition
+// modify it in a condition of true or false
+// bring it outside of the cycle to verify the value in another condition
