@@ -12,7 +12,10 @@ form.addEventListener('submit',
             console.log('-', mailList[i]);
             if (userEmail == mailList[i]){
                 alert('yes')
+                break;
             }
+            
+           
             
         }
         
