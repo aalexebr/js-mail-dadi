@@ -12,29 +12,19 @@ form.addEventListener('submit',
             // console.log('-', mailList[i]);
             if (userEmail == mailList[i]){
                 // alert('yes')
-                console.log('accpting number', userEmail, mailList[i])
-                break;
+                console.log('accepting ', userEmail, mailList[i])
+                // break;
                 
             }
             else{
                 // alert('no')
-                console.log('non accpting number', userEmail, mailList[i])
+                console.log('non accepting ', userEmail, mailList[i])
             }
            
             
         }
-        for (let i = 0; i < mailList.length; i++) {
-            // console.log('-', mailList[i]);
-            if (userEmail !== mailList[i]){
-                // alert('yes')
-                console.log('second loop', userEmail, mailList[i])
-                break;
-                
-            }
-            
-           
-            
-        }
+        
+      
        
         
     }
